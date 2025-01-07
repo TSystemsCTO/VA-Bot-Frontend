@@ -1,9 +1,8 @@
+import { AiOutlineSend, AiFillHome } from "react-icons/ai";
 import React from "react";
 import logo from "../data/daikin-logo.png";
 import bot from "../data/Bot.png";
-import { AiFillHome } from "react-icons/ai";
-import icon from "../data/icon.png";
-import bgImage from "../data/Bg.jpg"
+import bgImage from "../data/Bg.jpg";
 
 function ChatAI() {
   return (
@@ -21,7 +20,7 @@ function ChatAI() {
       {/* Header Section */}
       <header className="flex items-center justify-between w-full px-4 py-2">
         <img src={logo} alt="Daikin Logo" className="w-48" />
-        <button className="text-blue-500 hover:text-blue-700 flex items-center">
+        <button className="text-[#00B3FF] flex items-center">
           <AiFillHome className="w-9 h-9" />
         </button>
       </header>
@@ -30,7 +29,7 @@ function ChatAI() {
         {/* Main Section */}
         <main className="text-center justify-center px-8 py-6">
           {/* AI Icon */}
-          <div className="flex justify-center items-center bg-blue-400 w-28 h-13 rounded-full mx-auto mb-6">
+          <div className="flex justify-center items-center bg-[#00B3FF] w-28 h-13 rounded-full mx-auto mb-6">
             <img src={bot} alt="AI Icon" className="w-14 h-11" />
           </div>
 
@@ -41,17 +40,17 @@ function ChatAI() {
 
           {/* Suggestions Section */}
           <div className="text-center">
-          <p className="text-gray-800 mb-4 font-medium text-left w-full ">
-            Suggestions on what to ask Our AI
-          </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <button className="bg-white bg-opacity-50 text-gray-700 border border-gray-300 px-4 py-2 rounded-lg shadow hover:bg-opacity-75">
+            <p className="text-[#56637E] mb-4 font-medium text-left w-full ">
+              Suggestions on what to ask Our AI
+            </p>
+            <div className="flex flex-wrap justify-center font-montserrat gap-4">
+              <button className="bg-white bg-opacity-50 text-[#160211] border-2 border-white  px-4 py-2 rounded-lg ">
                 What can I ask you to do?
               </button>
-              <button className="bg-white bg-opacity-50 text-gray-700 border border-gray-300 px-4 py-2 rounded-lg shadow hover:bg-opacity-75">
+              <button className="bg-white bg-opacity-50 text-[#160211] border-2 border-white  px-4 py-2 rounded-lg">
                 How to check for, or what do the fault codes mean?
               </button>
-              <button className="bg-white bg-opacity-50 text-gray-700 border border-gray-300 px-4 py-2 rounded-lg shadow hover:bg-opacity-75">
+              <button className="bg-white bg-opacity-50 text-[#160211] border-2 border-white  px-4 py-2 rounded-lg">
                 Request for a general service or clean of your air conditioner.
               </button>
             </div>
@@ -65,7 +64,7 @@ function ChatAI() {
               className="flex-grow px-4 py-1 focus:outline-none text-gray-700 bg-white"
             />
             <button className="px-4 py-1 text-gray-400 hover:text-gray-600">
-              <img src={icon} alt="icon" className="w-12" />
+              <AiOutlineSend className="w-8 h-8" />
             </button>
           </div>
         </main>
